@@ -15,7 +15,7 @@
     "function-timeout"     : 30,
     "function-handler"     : "AlexConnect.Feature.AlexaSkill::AlexConnect.Feature.AlexaSkill.Function::FunctionHandler",
     "function-name"        : "AlexConnectFunctionEndpoint",
-    "function-role"        : "arn:aws:iam::534969648907:role/lambda_exec_AlexConnectFunctionEndpoint",
+    "function-role"        : "arn:aws:iam::534969648907:role/lambda_exec_AlexConnectFunctionEndpoint-8",
     "tracing-mode"         : "PassThrough",
     "environment-variables" : ""
 }

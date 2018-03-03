@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 
 using Alexa.NET.Request;
@@ -31,7 +30,7 @@ namespace AlexConnect.Feature.AlexaSkill
             {
                 log.LogLine($"Default LaunchRequest made: 'Alexa, open Sports Facts");
                 innerResponse = new PlainTextOutputSpeech();
-                ((PlainTextOutputSpeech) innerResponse).Text = emitNewFact(resource, true);
+                ((PlainTextOutputSpeech) innerResponse).Text = EmitNewFact(resource, true, context);
 
             }
             else if (input.GetRequestType() == typeof(IntentRequest))
@@ -60,17 +59,17 @@ namespace AlexConnect.Feature.AlexaSkill
                     case "GetTennisFactIntent":
                         log.LogLine($"GetTennisFactIntent sent: send new fact");
                         innerResponse = new PlainTextOutputSpeech();
-                        ((PlainTextOutputSpeech) innerResponse).Text = emitNewFact(resource, false);
+                        ((PlainTextOutputSpeech) innerResponse).Text = EmitNewFact(resource, false, context);
                         break;
                     case "GetBaseballFactIntent":
                         log.LogLine($"GetBaseballFactIntent sent: send new fact");
                         innerResponse = new PlainTextOutputSpeech();
-                        ((PlainTextOutputSpeech) innerResponse).Text = emitNewFact(resource, false);
+                        ((PlainTextOutputSpeech) innerResponse).Text = EmitNewFact(resource, false, context);
                         break;
                     case "GetFootballFactIntent":
                         log.LogLine($"GetFootballFactIntent sent: send new fact");
                         innerResponse = new PlainTextOutputSpeech();
-                        ((PlainTextOutputSpeech)innerResponse).Text = emitNewFact(resource, false);
+                        ((PlainTextOutputSpeech)innerResponse).Text = EmitNewFact(resource, false, context);
                         break;
                     default:
                         log.LogLine($"Unknown intent: " + intentRequest.Intent.Name);
@@ -87,9 +86,14 @@ namespace AlexConnect.Feature.AlexaSkill
             return response;
         }
 
-        public string emitNewFact(AlexaResourceItem resource, bool withPreface)
+        public string EmitNewFact(AlexaResourceItem resource, bool withPreface, ILambdaContext context)
         {
+            var repo = new Repository.XconnectRepository(context);
+
+            //repo.RegisterFactEvent("Alex", "", "");
+            
             return string.Empty;
+            //AlexConnect.Feature.AlexaSkill.Repository.XconnectRepository = new 
             //Random r = new Random();
             //if (withPreface)
             //    return resource.GetFactMessage + resource.Facts[r.Next(resource.Facts.Count)];

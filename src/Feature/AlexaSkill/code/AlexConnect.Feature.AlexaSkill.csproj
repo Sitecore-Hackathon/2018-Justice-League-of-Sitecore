@@ -9,10 +9,30 @@
     <PackageReference Include="Alexa.NET" Version="1.4.2" />
     <PackageReference Include="Amazon.Lambda.Core" Version="1.0.0" />
     <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.1.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+    <PackageReference Include="System.Interactive.Async.Providers" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Amazon.Lambda.Tools" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Sitecore.XConnect">
+      <HintPath>..\..\..\..\packages\Sitecore.XConnect.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect.Client">
+      <HintPath>..\..\..\..\packages\Sitecore.XConnect.Client.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect.Client.Configuration">
+      <HintPath>..\..\..\..\packages\Sitecore.XConnect.Client.Configuration.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.Client.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect.Collection.Model">
+      <HintPath>..\..\..\..\packages\Sitecore.XConnect.Collection.Model.NoReferences.9.0.171002\lib\NET462\Sitecore.XConnect.Collection.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Interactive.Async.Providers">
+      <HintPath>..\..\..\..\packages\System.Interactive.Async.Providers.3.0.0\lib\net45\System.Interactive.Async.Providers.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
