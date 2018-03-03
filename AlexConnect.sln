@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{E884
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexConnect.Feature.AlexaSkill", "src\Feature\AlexaSkill\code\AlexConnect.Feature.AlexaSkill.csproj", "{4FEA4873-6546-4F56-8648-91EB2B54B658}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexConnect.Feature.Fact", "src\Feature\Fact\code\AlexConnect.Feature.Fact.csproj", "{7D38C366-3756-44DD-B2A3-B0714582B430}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +23,17 @@ Global
 		{4FEA4873-6546-4F56-8648-91EB2B54B658}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FEA4873-6546-4F56-8648-91EB2B54B658}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FEA4873-6546-4F56-8648-91EB2B54B658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D38C366-3756-44DD-B2A3-B0714582B430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D38C366-3756-44DD-B2A3-B0714582B430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D38C366-3756-44DD-B2A3-B0714582B430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D38C366-3756-44DD-B2A3-B0714582B430}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4FEA4873-6546-4F56-8648-91EB2B54B658} = {F88A3E9C-6566-48A2-910C-3C10AA88D7DA}
+		{7D38C366-3756-44DD-B2A3-B0714582B430} = {F88A3E9C-6566-48A2-910C-3C10AA88D7DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3362F701-0121-470C-AF6A-219CEA346F71}

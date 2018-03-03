@@ -24,7 +24,7 @@ namespace AlexConnect.Feature.AlexaSkill
             log.LogLine($"Skill Request Object:");
             log.LogLine(JsonConvert.SerializeObject(input));
 
-            var allResources = ItemResource.GetResources();
+            var allResources = AlexaResourceItem.GetResources();
             var resource = allResources.FirstOrDefault();
 
             if (input.GetRequestType() == typeof(LaunchRequest))
@@ -87,12 +87,13 @@ namespace AlexConnect.Feature.AlexaSkill
             return response;
         }
 
-        public string emitNewFact(ItemResource resource, bool withPreface)
+        public string emitNewFact(AlexaResourceItem resource, bool withPreface)
         {
-            Random r = new Random();
-            if (withPreface)
-                return resource.GetFactMessage + resource.Facts[r.Next(resource.Facts.Count)];
-            return resource.Facts[r.Next(resource.Facts.Count)];
+            return string.Empty;
+            //Random r = new Random();
+            //if (withPreface)
+            //    return resource.GetFactMessage + resource.Facts[r.Next(resource.Facts.Count)];
+            //return resource.Facts[r.Next(resource.Facts.Count)];
         }
 
     }
