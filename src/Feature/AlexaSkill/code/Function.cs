@@ -29,7 +29,7 @@ namespace AlexConnect.Feature.AlexaSkill
 
             if (input.GetRequestType() == typeof(LaunchRequest))
             {
-                log.LogLine($"Default LaunchRequest made: 'Alexa, open Science Facts");
+                log.LogLine($"Default LaunchRequest made: 'Alexa, open Sports Facts");
                 innerResponse = new PlainTextOutputSpeech();
                 ((PlainTextOutputSpeech) innerResponse).Text = emitNewFact(resource, true);
 
@@ -57,15 +57,20 @@ namespace AlexConnect.Feature.AlexaSkill
                         innerResponse = new PlainTextOutputSpeech();
                         ((PlainTextOutputSpeech) innerResponse).Text = resource.HelpMessage;
                         break;
-                    case "GetFactIntent":
-                        log.LogLine($"GetFactIntent sent: send new fact");
+                    case "GetTennisFactIntent":
+                        log.LogLine($"GetTennisFactIntent sent: send new fact");
                         innerResponse = new PlainTextOutputSpeech();
                         ((PlainTextOutputSpeech) innerResponse).Text = emitNewFact(resource, false);
                         break;
-                    case "GetNewFactIntent":
-                        log.LogLine($"GetFactIntent sent: send new fact");
+                    case "GetBaseballFactIntent":
+                        log.LogLine($"GetBaseballFactIntent sent: send new fact");
                         innerResponse = new PlainTextOutputSpeech();
                         ((PlainTextOutputSpeech) innerResponse).Text = emitNewFact(resource, false);
+                        break;
+                    case "GetFootballFactIntent":
+                        log.LogLine($"GetFootballFactIntent sent: send new fact");
+                        innerResponse = new PlainTextOutputSpeech();
+                        ((PlainTextOutputSpeech)innerResponse).Text = emitNewFact(resource, false);
                         break;
                     default:
                         log.LogLine($"Unknown intent: " + intentRequest.Intent.Name);
