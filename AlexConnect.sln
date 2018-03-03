@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{F88A3E9C-6566-48A2-910C-3C10AA88D7DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{087EDB9A-7D6E-49CF-BACE-857ECD0C1FE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{E8840F82-E977-4FC6-BB26-CCDD63997256}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexConnect.Feature.AlexaSkill", "src\Feature\AlexaSkill\code\AlexConnect.Feature.AlexaSkill.csproj", "{4FEA4873-6546-4F56-8648-91EB2B54B658}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FEA4873-6546-4F56-8648-91EB2B54B658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEA4873-6546-4F56-8648-91EB2B54B658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FEA4873-6546-4F56-8648-91EB2B54B658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEA4873-6546-4F56-8648-91EB2B54B658}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4FEA4873-6546-4F56-8648-91EB2B54B658} = {F88A3E9C-6566-48A2-910C-3C10AA88D7DA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3362F701-0121-470C-AF6A-219CEA346F71}
+	EndGlobalSection
+EndGlobal
